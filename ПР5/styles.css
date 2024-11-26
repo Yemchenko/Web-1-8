@@ -1,0 +1,129 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #bde8fa;
+}
+
+.planner-container {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    grid-template-columns: 1fr 3fr;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #aeb4b9;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.planner-header {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #c2c4ca;
+    padding: 10px 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.planner-header h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.header-inputs {
+    display: flex;
+    gap: 20px;
+}
+
+.header-inputs label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.header-inputs input[type="text"], 
+.header-inputs input[type="checkbox"] {
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.planner-grid {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 20px;
+}
+
+.todo-section {
+    background-color: #c2c4ca;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    height: auto;
+}
+
+.todo-section h2, .todo-section h3 {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.todo-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.todo-section li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.todo-section input[type="text"] {
+    width: calc(100% - 25px);
+    margin-left: 10px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.week-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    height: 100%;
+}
+
+.day {
+    background-color: #ffbeea;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.day h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.day input[type="checkbox"] {
+    margin: 0;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+
+.day textarea {
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none;
+}

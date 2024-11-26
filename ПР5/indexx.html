@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weekly Planner</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="planner-container">
+        <header class="planner-header">
+            <h1>WEEKLY PLAN</h1>
+            <div class="header-inputs">
+                <div>
+                    <label for="week-of">WEEK OF</label>
+                    <input type="text" id="week-of" placeholder="Enter date range">
+                </div>
+                <div>
+                    <label for="healthy-habit">HEALTHY HABIT</label>
+                    <input type="text" id="healthy-habit" placeholder="Enter habit">
+                </div>
+                <div>
+                    <label>ROCKED IT</label>
+                    <input type="checkbox">
+                </div>
+                <div>
+                    <label>ROOM FOR IMPROVEMENT</label>
+                    <input type="checkbox">
+                </div>
+            </div>
+        </header>
+        <aside class="todo-section">
+            <h2>TO DO</h2>
+            <h3>TOP 3 GOALS</h3>
+            <ul>
+                <li><input type="checkbox"> <input type="text" placeholder="Enter goal"></li>
+                <li><input type="checkbox"> <input type="text" placeholder="Enter goal"></li>
+                <li><input type="checkbox"> <input type="text" placeholder="Enter goal"></li>
+            </ul>
+            <h3>EVERYTHING ELSE</h3>
+            <ul>
+                <li><input type="checkbox"> <input type="text" placeholder="Enter task"></li>
+                <li><input type="checkbox"> <input type="text" placeholder="Enter task"></li>
+                <li><input type="checkbox"> <input type="text" placeholder="Enter task"></li>
+            </ul>
+            <h3>NEXT WEEK</h3>
+            <ul>
+                <li><input type="checkbox"> <input type="text" placeholder="Enter task"></li>
+                <li><input type="checkbox"> <input type="text" placeholder="Enter task"></li>
+                <li><input type="checkbox"> <input type="text" placeholder="Enter task"></li>
+            </ul>
+        </aside>
+        <main class="week-grid">
+            <div class="day">
+                <h2>
+                    <input type="checkbox" id="monday-check">
+                    <label for="monday-check">MONDAY</label>
+                </h2>
+                <textarea placeholder="Enter tasks"></textarea>
+            </div>
+            <div class="day">
+                <h2>
+                    <input type="checkbox" id="tuesday-check">
+                    <label for="tuesday-check">TUESDAY</label>
+                </h2>
+                <textarea placeholder="Enter tasks"></textarea>
+            </div>
+            <div class="day">
+                <h2>
+                    <input type="checkbox" id="wednesday-check">
+                    <label for="wednesday-check">WEDNESDAY</label>
+                </h2>
+                <textarea placeholder="Enter tasks"></textarea>
+            </div>
+            <div class="day">
+                <h2>
+                    <input type="checkbox" id="thursday-check">
+                    <label for="thursday-check">THURSDAY</label>
+                </h2>
+                <textarea placeholder="Enter tasks"></textarea>
+            </div>
+            <div class="day">
+                <h2>
+                    <input type="checkbox" id="friday-check">
+                    <label for="friday-check">FRIDAY</label>
+                </h2>
+                <textarea placeholder="Enter tasks"></textarea>
+            </div>
+            <div class="day">
+                <h2>
+                    <input type="checkbox" id="saturday-check">
+                    <label for="saturday-check">SATURDAY</label>
+                </h2>
+                <textarea placeholder="Enter tasks"></textarea>
+            </div>
+            <div class="day">
+                <h2>
+                    <input type="checkbox" id="sunday-check">
+                    <label for="sunday-check">SUNDAY</label>
+                </h2>
+                <textarea placeholder="Enter tasks"></textarea>
+            </div>
+        </main>
+    </div>
+    
+</body>
+</html>

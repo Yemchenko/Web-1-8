@@ -1,0 +1,106 @@
+$font-primary: 'Arial', sans-serif;
+$color-bg: #f0f4f8;
+$color-primary: #1f2937;
+$color-accent: #2563eb;
+$color-button-hover: lighten($color-accent, 10%);
+$spacing: 16px;
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin button-style($bg-color, $text-color) {
+  background-color: $bg-color;
+  color: $text-color;
+  padding: $spacing;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: $color-button-hover;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+}
+
+body {
+  margin: 0;
+  font-family: $font-primary;
+  background-color: $color-bg;
+  color: $color-primary;
+  line-height: 1.6;
+}
+
+h1, h2, p {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  border-radius: 8px;
+}
+
+.header {
+  @include flex-center;
+  background: linear-gradient(90deg, $color-accent, lighten($color-accent, 20%));
+  color: #fff;
+  padding: $spacing * 2;
+  text-align: center;
+
+  &__title {
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+}
+
+.intro {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: $spacing * 2;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  &__content {
+    max-width: 50%;
+
+    @media (max-width: 768px) {
+      max-width: 100%;
+    }
+
+    &__subtitle {
+      font-size: 1.5rem;
+      margin-bottom: $spacing;
+      color: $color-accent;
+    }
+
+    &__description {
+      font-size: 1rem;
+      margin-bottom: $spacing * 2;
+    }
+  }
+
+  &__image {
+    max-width: 45%;
+
+    @media (max-width: 768px) {
+      max-width: 100%;
+    }
+  }
+}
+
+.button {
+  &--primary {
+    @include button-style($color-accent, #fff);
+  }
+}
